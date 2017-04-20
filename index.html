@@ -3,10 +3,189 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-  </head>
-  <body>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+  	</head>
+  	<body>
+	<header class="header">
+		<div class="container">
+			<div class="header-top">
+				<div class="header-top-logo">
+					<h1 class="header-top-logo-title">Техномарт</h1>
+				</div>
+				<a class="header-top-search" href="#">Поиск</a>
+				<a class="header-top-bookmarks" href="#">Закладки</a>
+				<a 	class="header-top-basket" href="#">Корзина</a>
+				<a class="header-top-ordering" href="#">Оформление заказа</a>
+			</div>
+			<div class="header-center">
+				<div class="header-center-subtitle">
+					<h2>Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</h2>
+				</div>
+				<div class="header-center-vcard">
+					<div class="vcard-tel">+7 (812) 555-05-55</div>
+					<div class="vcard-street-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+				</div>
+				 <div class="header-center-enter">
+	        		<a class="login" href="#">Войти</a>
+	        	</div>
+	        	<div class="header-center-registration">
+	        		<a class="reg" href="#">Регистрация</a>
+	        	</div>
+			</div>
+			<nav class="header-navigation">
+				<ul class="navigation-list">
+					<li class="navigation-item">
+						<a href="/">Главная</a>
+					</li>
+					<li class="navigation-item">
+						<a href="#">Компания</a>
+					</li>
+					<li class="navigation-item">
+						<a href="#">Каталог</a>
+					</li>
+					<li class="navigation-item">
+						<a href="#">Новости</a>
+					</li>
+					<li class="navigation-item">
+						<a href="#">Спецпредложения</a>
+					</li>
+					<li class="navigation-item">
+						<a href="#">Доставка</a>
+					</li>
+					<li class="navigation-item">
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section class="content">
+		<div class="container">
+			<div class="stock">
+				<div class="link-block materials">
+					<h3 class="stock-title">Материалы</h3>
+					<p><a class="stock-link" href="#">на любой вкус</a></p>
+					<img src="stock-img bucket">
+				</div>
+				<div class="link-block tool">
+					<h3 class="stock-title">Инсрументы</h3>
+					<p><a class="stock-link" href="#">на все случаи</a></p>
+					<img src="stock-img drill">
+				</div>
+				<div class="link-block tech">
+					<h3 class="stock-title">Техника</h3>
+					<p><a class="stock-link" href="#">для стройки</a></p>
+					<img src="stock-img tractor">
+				</div>
+				<div class="link-block discount">
+					<h3 class="stock-title">Скидки 50%</h3>
+					<p><a class="stock-link" href="#">на 350 товаров</a></p>
+					<img src="stock-img pushcart">
+				</div>
+				<div class="link-block delivery">
+					<h3 class="stock-title">Доставка</h3>
+					<p><a class="stock-link" href="#">бесплатно</a></p>
+					<img src="stock-img pushcart">
+				</div>
+				<div class="slider">
+					<h3 class="slider-title">перфораторы</h3>
+					<p class="slider-text">Настоящие мужские игрушки</p>
+					<img class="slider-img" src="#">
+					<a class="slider-link" href="#">открыть каталог</a>
+				</div>
+			</div>
+			<div class="popular">
+				 <div class="popular-title">
+				 	<span>популярные товары:</span>
+				 </div>
+				 <div class="popular-link">
+				 	<a href="#"><span>все популярные товары</span></a>
+				 </div>
+			</div>
+			<div class="block-goods">
+				<div class="block-item">
+					<img src="http://lorempixel.com/215/145/" width="215" height="145">
+					<span class="goods-name">Перфоратор BOSCH BFG 9000</span>
+					<span class="price-old">32500 р.</span>
+					<span price>25500 р.</span>
+				</div>
+				<div class="block-item">
+					<img src="http://lorempixel.com/215/145/" width="215" height="145">
+					<span class="goods-name">Перфоратор BOSCH BFG 3000</span>
+					<span class="price-old">22500 р.</span>
+					<span price>15500 р.</span>
+				</div>
+				<div class="block-item">
+					<img src="http://lorempixel.com/215/145/" width="215" height="145">
+					<span class="goods-name">Перфоратор BOSCH BFG 6000</span>
+					<span class="price-old">30500 р.</span>
+					<span price>25500 р.</span>
+				</div>
+				<div class="block-item">
+					<img src="http://lorempixel.com/215/145/" width="215" height="145">
+					<span class="goods-name">Перфоратор BOSCH BFG 2000</span>
+					<span price>12500 р.</span>
+				</div>
+			</div>
+			<div class="popular">
+				 <div class="popular-title">
+				 	<span>популярные производители:</span>
+				 </div>
+				 <div class="popular-link"> 
+				 	<a href="#"><span>все производители</span></a>
+				 </div>
+			</div>
+			<div class="manufacturer">
+				<div class="block-manufacturer">
+					<img src="http://lorempixel.com/160/50/">
+				</div>
+				<div class="block-manufacturer">
+					<img src="http://lorempixel.com/160/50/">
+				</div>
+				<div class="block-manufacturer">
+					<img src="http://lorempixel.com/160/50/">
+				</div>
+				<div class="block-manufacturer">
+					<img src="http://lorempixel.com/160/50/">
+				</div>
+				<div class="block-manufacturer">
+					<img src="http://lorempixel.com/160/50/">
+				</div>
+				<div class="block-manufacturer">
+					<img src="http://lorempixel.com/160/50/">
+				</div>
+				<div class="block-manufacturer">
+					<img src="http://lorempixel.com/160/50/">
+				</div>
+				<div class="block-manufacturer">
+					<img src="http://lorempixel.com/160/50/">
+				</div>
+			</div>
+			<div class="services">
+				<div class="services-discription">
+					<h2 class="services-title">сервисы</h2>
+					<p>Хороший интернет-магазин отличается от плохого не только ценами!</p> 
+					<p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+				</div>
+				<div class="services-link">
+					<ul class="list">
+						<li>
+							<a class="item" href="#">Доставка</a>
+						</li>
+						<li>
+							<a class="item" href="#">Гарантия</a>
+						</li> 
+						<li>
+							<a class="item" href="#">Кредит</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+		</div>
+	</section>
+   
 
-  </body>
+	</body>
 </html>
