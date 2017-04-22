@@ -8,58 +8,65 @@
   	</head>
   	<body>
 	<header class="header">
-		<div class="container">
-			<div class="header-top">
-				<div class="header-top-logo">
-					<h1 class="header-top-logo-title">Техномарт</h1>
-				</div>
-				<a class="header-top-search" href="#">Поиск</a>
-				<a class="header-top-bookmarks" href="#">Закладки</a>
-				<a 	class="header-top-basket" href="#">Корзина</a>
-				<a class="header-top-ordering" href="#">Оформление заказа</a>
-			</div>
-			<div class="header-center">
-				<div class="header-center-subtitle">
-					<h2>Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</h2>
-				</div>
-				<div class="header-center-vcard">
-					<div class="vcard-tel">+7 (812) 555-05-55</div>
-					<div class="vcard-street-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
-				</div>
-				 <div class="header-center-enter">
-	        		<a class="login" href="#">Войти</a>
-	        	</div>
-	        	<div class="header-center-registration">
-	        		<a class="reg" href="#">Регистрация</a>
-	        	</div>
-			</div>
-			<nav class="header-navigation">
-				<ul class="navigation-list">
-					<li class="navigation-item">
-						<a href="/">Главная</a>
-					</li>
-					<li class="navigation-item">
-						<a href="#">Компания</a>
-					</li>
-					<li class="navigation-item">
-						<a href="#">Каталог</a>
-					</li>
-					<li class="navigation-item">
-						<a href="#">Новости</a>
-					</li>
-					<li class="navigation-item">
-						<a href="#">Спецпредложения</a>
-					</li>
-					<li class="navigation-item">
-						<a href="#">Доставка</a>
-					</li>
-					<li class="navigation-item">
-						<a href="#">Контакты</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+    <div class="header__top">
+    	<div class="container">
+	      <div class="header__logo logo">
+	        <h1 class="logo__title">Техномарт</h1>
+	      </div>
+	      <div class="header__search search">
+			<form action="#" method="get" enctype="multipart/form-data">
+              <input type="search" name="search" id="search" placeholder="Поиск:">
+              <label class="search-label" for="search"></label>
+            </form>
+	      </div>
+	      <div class="header__links user">
+	        <a class="user__item user__item--bookmarks" href="#">Закладки</a>
+	        <a class="user__item user__item--basket" href="#">Корзина</a>
+	        <a class="user__item user__item--ordering" href="#">Оформление заказа</a>
+	      </div>
+	    </div>
+
+    <div class="header__bottom">
+      <div class="row">
+        <div class="header__slogan">
+          <h2>Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</h2>
+        </div>
+        <div class="header__vcard vcard">
+          <div class="vcard__tel">+7 (812) 555-05-55</div>
+          <div class="vcard__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+        </div>
+        <div class="header__account account">
+          <a class="account__btn account__btn--login" href="#">Войти</a>
+          <a class="account__btn account__btn--reg" href="#">Регистрация</a>
+        </div>
+      </div>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation-item">
+            <a href="/">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#">Компания</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#">Каталог</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#">Новости</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#">Спецпредложения</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#">Доставка</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+</header>
 	<section class="content">
 		<div class="container">
 			<div class="stock">
