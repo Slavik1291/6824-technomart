@@ -10,9 +10,9 @@
 	<header class="header">
     <div class="header__top">
     	<div class="container">
-	      <div class="header__logo logo">
-	        <h1 class="logo__title">Техномарт</h1>
-	      </div>
+	        <a header__logo-link href="#">
+	        	<h1 class="header__logo logo">Техномарт</h1>
+	        </a>
 	      <div class="header__search search">
 			<form action="#" method="get" enctype="multipart/form-data">
               <input type="search" name="search" id="search" placeholder="Поиск:">
@@ -27,172 +27,232 @@
 	    </div>
 
     <div class="header__bottom">
-      <div class="row">
-        <div class="header__slogan">
-          <h2>Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</h2>
-        </div>
-        <div class="header__vcard vcard">
-          <div class="vcard__tel">+7 (812) 555-05-55</div>
-          <div class="vcard__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
-        </div>
-        <div class="header__account account">
-          <a class="account__btn account__btn--login" href="#">Войти</a>
-          <a class="account__btn account__btn--reg" href="#">Регистрация</a>
-        </div>
-      </div>
-      <nav class="navigation">
-        <ul class="navigation__list">
-          <li class="navigation-item">
-            <a href="/">Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a href="#">Компания</a>
-          </li>
-          <li class="navigation-item">
-            <a href="#">Каталог</a>
-          </li>
-          <li class="navigation-item">
-            <a href="#">Новости</a>
-          </li>
-          <li class="navigation-item">
-            <a href="#">Спецпредложения</a>
-          </li>
-          <li class="navigation-item">
-            <a href="#">Доставка</a>
-          </li>
-          <li class="navigation-item">
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    	<div class="container">
+	      <div class="row">
+	        <div class="header__slogan">
+	          <h2>Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</h2>
+	        </div>
+	        <div class="header__vcard vcard">
+	          <div class="vcard__tel">+7 (812) 555-05-55</div>
+	          <div class="vcard__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+	        </div>
+	        <div class="header__account account">
+	          <a class="account__btn account__btn--login" href="#">Войти</a>
+	          <a class="account__btn account__btn--reg" href="#">Регистрация</a>
+	        </div>
+	      </div>
+	      <nav class="navigation">
+	        <ul class="menu">
+	          <li class="menu__item">	
+	            <a class="menu__link link" href="/">Главная</a>
+	          </li>
+	          <li class="menu__item">
+	            <a class="menu__link link" href="#">Компания</a>
+	          </li>
+	          <li class="menu__item">
+	            <a class="menu__link link" href="#">Каталог</a>
+	          </li>
+	          <li class="menu__item">
+	            <a class="menu__link link" href="#">Новости</a>
+	          </li>
+	          <li class="menu__item">
+	            <a class="menu__link link" href="#">Спецпредложения</a>
+	          </li>
+	          <li class="menu__item">
+	            <a class="menu__link link" href="#">Доставка</a>
+	          </li>
+	          <li class="menu__item">
+	            <a class="menu__link link" href="#">Контакты</a>
+	          </li>
+	        </ul>
+	      </nav>
+	    </div>
+	</div>
 </header>
 	<section class="content">
 		<div class="container">
-			<div class="stock">
-				<div class="link-block materials">
-					<h3 class="stock-title">Материалы</h3>
-					<p><a class="stock-link" href="#">на любой вкус</a></p>
-					<img src="stock-img bucket">
+			<div class="promo">
+				<div class="promo__item materials">
+					<h3 class="promo__title title">Материалы</h3>
+					<a class="promo__link link" href="#">на любой вкус</a>
+					<img src="promo__img bucket">
 				</div>
-				<div class="link-block tool">
-					<h3 class="stock-title">Инсрументы</h3>
-					<p><a class="stock-link" href="#">на все случаи</a></p>
-					<img src="stock-img drill">
+				<div class="promo__item tool">
+					<h3 class="promo__title title">Инсрументы</h3>
+					<a class="promo__link link" href="#">на все случаи</a>
+					<img src="promo__img drill">
 				</div>
-				<div class="link-block tech">
-					<h3 class="stock-title">Техника</h3>
-					<p><a class="stock-link" href="#">для стройки</a></p>
-					<img src="stock-img tractor">
-				</div>
-				<div class="link-block discount">
-					<h3 class="stock-title">Скидки 50%</h3>
-					<p><a class="stock-link" href="#">на 350 товаров</a></p>
-					<img src="stock-img pushcart">
-				</div>
-				<div class="link-block delivery">
-					<h3 class="stock-title">Доставка</h3>
-					<p><a class="stock-link" href="#">бесплатно</a></p>
-					<img src="stock-img pushcart">
+				<div class="promo__item tech">
+					<h3 class="promo__title title">Техника</h3>
+					<a class="promo__link link" href="#">для стройки</a>
+					<img src="promo__img tractor">
 				</div>
 				<div class="slider">
-					<h3 class="slider-title">перфораторы</h3>
-					<p class="slider-text">Настоящие мужские игрушки</p>
-					<img class="slider-img" src="#">
-					<a class="slider-link" href="#">открыть каталог</a>
+					<div class="slider__slides">
+						<div class="slider__slides--item">
+							<h3 class="slider__title">перфораторы</h3>
+							<p class="slider__text">Настоящие мужские игрушки</p>
+							<img class="slider-img" src="#">
+							<a class="slider-link" href="#">открыть каталог</a>
+						</div>
+						<div class="slider__slides--item">
+							<h3 class="slider__title">Дрели</h3>
+							<p class="slider__text">Соседям на радость!</p>
+							<img class="slider-img" src="#">
+							<a class="slider-link" href="#">открыть каталог</a>
+						</div>
+					</div>
+					<div class="slider__arows">
+					</div>
+					<div class="slider_dots">
+					</div>
+				</div>
+				<div class="promo__item discount">
+					<h3 class="promo__title title">Скидки 50%</h3>
+					<a class="promo__link link" href="#">на 350 товаров</a>
+					<img src="promo__img pushcart">
+				</div>
+				<div class="promo__item delivery">
+					<h3 class="promo__title title">Доставка</h3>
+					<a class="promo__link link" href="#">бесплатно</a>
+					<img src="promo__img pushcart">
 				</div>
 			</div>
-			<div class="popular">
-				 <div class="popular-title">
-				 	<span>популярные товары:</span>
-				 </div>
-				 <div class="popular-link">
-				 	<a href="#"><span>все популярные товары</span></a>
-				 </div>
-			</div>
-			<div class="block-goods">
-				<div class="block-item">
-					<img src="http://lorempixel.com/215/145/" width="215" height="145">
-					<span class="goods-name">Перфоратор BOSCH BFG 9000</span>
-					<span class="price-old">32500 р.</span>
-					<span price>25500 р.</span>
+			<section class="products">
+				<div class="popular">
+					 <h2 class="popular__title">популярные товары:</h2>
+					 <a class="popular__link" href="#"><span class="link__text">все популярные товары</span></a>
 				</div>
-				<div class="block-item">
-					<img src="http://lorempixel.com/215/145/" width="215" height="145">
-					<span class="goods-name">Перфоратор BOSCH BFG 3000</span>
-					<span class="price-old">22500 р.</span>
-					<span price>15500 р.</span>
+				<div class="goods">
+					<!-- Можно ли каждый блок ниже поместить вместо дивов в article? -->
+					<div class="goods__item">
+						<img src="http://lorempixel.com/215/145/" width="215" height="145">
+						<span class="goods__name">Перфоратор BOSCH BFG 9000</span>
+						<span class="goods__price-old">32500 р.</span>
+						<span class="price">25500 р.</span>
+					</div>
+					<div class="goods__item">
+						<img src="http://lorempixel.com/215/145/" width="215" height="145">
+						<span class="goods__name">Перфоратор BOSCH BFG 3000</span>
+						<span class="goods__price-old">22500 р.</span>
+						<span class="goods__price">15500 р.</span>
+					</div>
+					<div class="goods__item">
+						<img src="http://lorempixel.com/215/145/" width="215" height="145">
+						<span class="goods__name">Перфоратор BOSCH BFG 6000</span>
+						<span class="goods__price-old">30500 р.</span>
+						<span class="price">25500 р.</span>
+					</div>
+					<div class="goods__item">
+						<img src="http://lorempixel.com/215/145/" width="215" height="145">
+						<span class="goods__name">Перфоратор BOSCH BFG 2000</span>
+						<span class="price">12500 р.</span>
+					</div>
 				</div>
-				<div class="block-item">
-					<img src="http://lorempixel.com/215/145/" width="215" height="145">
-					<span class="goods-name">Перфоратор BOSCH BFG 6000</span>
-					<span class="price-old">30500 р.</span>
-					<span price>25500 р.</span>
+			</section>
+			<section class="manufacturer">	
+				<div class="popular">
+					<h2 class="popular__title">популярные производители:</h2>
+					<a class="popular__link" href="#"><span class="link__text">все производители</span></a>
 				</div>
-				<div class="block-item">
-					<img src="http://lorempixel.com/215/145/" width="215" height="145">
-					<span class="goods-name">Перфоратор BOSCH BFG 2000</span>
-					<span price>12500 р.</span>
+				<div class="brands">
+				<!-- Аналогично. Можно ли каждый блок ниже поместить вместо дивов в article? -->
+					<div class="brands__block">
+						<img src="http://lorempixel.com/160/50/">
+					</div>
+					<div class="brands__block">
+						<img src="http://lorempixel.com/160/50/">
+					</div>
+					<div class="brands__block">
+						<img src="http://lorempixel.com/160/50/">
+					</div>
+					<div class="brands__block">
+						<img src="http://lorempixel.com/160/50/">
+					</div>
+					<div class="brands__block">
+						<img src="http://lorempixel.com/160/50/">
+					</div>
+					<div class="brands__block">
+						<img src="http://lorempixel.com/160/50/">
+					</div>
+					<div class="brands__block">
+						<img src="http://lorempixel.com/160/50/">
+					</div>
+					<div class="brands__block">
+						<img src="http://lorempixel.com/160/50/">
+					</div>
 				</div>
-			</div>
-			<div class="popular">
-				 <div class="popular-title">
-				 	<span>популярные производители:</span>
-				 </div>
-				 <div class="popular-link"> 
-				 	<a href="#"><span>все производители</span></a>
-				 </div>
-			</div>
-			<div class="manufacturer">
-				<div class="block-manufacturer">
-					<img src="http://lorempixel.com/160/50/">
-				</div>
-				<div class="block-manufacturer">
-					<img src="http://lorempixel.com/160/50/">
-				</div>
-				<div class="block-manufacturer">
-					<img src="http://lorempixel.com/160/50/">
-				</div>
-				<div class="block-manufacturer">
-					<img src="http://lorempixel.com/160/50/">
-				</div>
-				<div class="block-manufacturer">
-					<img src="http://lorempixel.com/160/50/">
-				</div>
-				<div class="block-manufacturer">
-					<img src="http://lorempixel.com/160/50/">
-				</div>
-				<div class="block-manufacturer">
-					<img src="http://lorempixel.com/160/50/">
-				</div>
-				<div class="block-manufacturer">
-					<img src="http://lorempixel.com/160/50/">
-				</div>
-			</div>
-			<div class="services">
+			</section>
+			<section class="services">
 				<div class="services-discription">
-					<h2 class="services-title">сервисы</h2>
-					<p>Хороший интернет-магазин отличается от плохого не только ценами!</p> 
-					<p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+					<h2 class="services__title title">сервисы</h2>
+					<p class="text">Хороший интернет-магазин отличается от плохого не только ценами!</p> 
+					<p class="services__text text">Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 				</div>
-				<div class="services-link">
-					<ul class="list">
-						<li>
-							<a class="item" href="#">Доставка</a>
+				<div class="services__block">
+					<ul class="services__list">
+						<li class="services__item">
+							<a class="services__link" href="#">Доставка</a>
 						</li>
 						<li>
-							<a class="item" href="#">Гарантия</a>
+							<a class="services__link" href="#">Гарантия</a>
 						</li> 
 						<li>
-							<a class="item" href="#">Кредит</a>
+							<a class="services__link" href="#">Кредит</a>
 						</li>
 					</ul>
+					<div class="delivery">
+						<h2 class="delivery_title">Доставка</h2>
+						<p class="text">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
+					</div>
+					<div class="delivery__image">
+						<img src="http://lorempixel.com/206/146/" width="206" height="146">
+					</div>
 				</div>
-			</div>
-
+			</section>
+			<section class="about">
+				<div class="company">
+					<h2 class="company__title title">компания «техномарт»</h2>
+					<p class="company__text text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
+					<p class="company__text text">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+						Техномарт работает со многими транспортными компаниями: </p>
+					<ul class="company__list">
+						<li class="company__item">Деловые линии</li>
+						<li class="company__item">Автотрейдинг</li>
+						<li class="company__item">ЖелДорЭкспедиция</li>
+					</ul>
+					<a class="popular__link" href="#"><span class="link__text">подробнее о компании</span></a>
+				</div>
+				<div class="contacts">
+					<h2 class="contacts__title title">контакты</h2>
+					<p class="contacts__text text">Вы можете забрать товар сами,<br>заехав в наш офис:</p>
+					<a class="map-big" href="http://lorempixel.com/940/450/" width="940" height="450"><img class="map-small" src="http://lorempixel.com/300/158/" width="300" height="158"></a>
+					<a class="popular__link" href="#"><span class="link__text">заблудились? напишите нам!</span></a>
+				</div>
+			</section>
 		</div>
 	</section>
-   
+	<footer class="footer">
+	<!-- Футер доверстаю уже завтра -->
+			<div class="footer__top">
+				<div class="container">
+					<div class="footer__contacts">
+						<a header__logo-link href="#">
+	        				<h1 class="footer__logo logo">Техномарт</h1>
+	        			</a>
+	        			<p class="footer-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+	        			<p class="footer-text">+7 (812) 555-05-55</p>
+					</div>
+				</div>
+				
+			</div>
+			<div class="footer__bottom">
+				<div class="container">
 
+				</div>
+				
+			</div>
+		</div>
+	</footer>
 	</body>
 </html>
