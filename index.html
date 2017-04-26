@@ -10,11 +10,9 @@
 	<header class="header">
     <div class="header__top">
     	<div class="container">
-	        <a header__logo-link href="#">
-	        	<h1 class="header__logo logo">Техномарт</h1>
-	        </a>
+	      <a class="header__logo logo" href="#">Техномарт</a>
 	      <div class="header__search search">
-			<form action="#" method="get" enctype="multipart/form-data">
+			<form action="#" method="get">
               <input type="search" name="search" id="search" placeholder="Поиск:">
               <label class="search-label" for="search"></label>
             </form>
@@ -73,19 +71,16 @@
 		<div class="container">
 			<div class="promo">
 				<div class="promo__item materials">
-					<h3 class="promo__title title">Материалы</h3>
+					<h3 class="promo__title">Материалы</h3>
 					<a class="promo__link link" href="#">на любой вкус</a>
-					<img src="promo__img bucket">
 				</div>
 				<div class="promo__item tool">
-					<h3 class="promo__title title">Инсрументы</h3>
+					<h3 class="promo__title">Инсрументы</h3>
 					<a class="promo__link link" href="#">на все случаи</a>
-					<img src="promo__img drill">
 				</div>
 				<div class="promo__item tech">
-					<h3 class="promo__title title">Техника</h3>
+					<h3 class="promo__title">Техника</h3>
 					<a class="promo__link link" href="#">для стройки</a>
-					<img src="promo__img tractor">
 				</div>
 				<div class="slider">
 					<div class="slider__slides">
@@ -108,77 +103,74 @@
 					</div>
 				</div>
 				<div class="promo__item discount">
-					<h3 class="promo__title title">Скидки 50%</h3>
+					<h3 class="promo__title">Скидки 50%</h3>
 					<a class="promo__link link" href="#">на 350 товаров</a>
-					<img src="promo__img pushcart">
 				</div>
 				<div class="promo__item delivery">
-					<h3 class="promo__title title">Доставка</h3>
+					<h3 class="promo__title">Доставка</h3>
 					<a class="promo__link link" href="#">бесплатно</a>
-					<img src="promo__img pushcart">
 				</div>
 			</div>
 			<section class="products">
 				<div class="popular">
 					 <h2 class="popular__title">популярные товары:</h2>
-					 <a class="popular__link" href="#"><span class="link__text">все популярные товары</span></a>
+					 <a class="popular__link" href="#">все популярные товары</a>
+
 				</div>
 				<div class="goods">
-					<!-- Можно ли каждый блок ниже поместить вместо дивов в article? -->
-					<div class="goods__item">
+					<article class="goods__item">
 						<img src="http://lorempixel.com/215/145/" width="215" height="145">
 						<span class="goods__name">Перфоратор BOSCH BFG 9000</span>
 						<span class="goods__price-old">32500 р.</span>
-						<span class="price">25500 р.</span>
+						<span class="goods__price">25500 р.</span>
 					</div>
-					<div class="goods__item">
+					<article class="goods__item">
 						<img src="http://lorempixel.com/215/145/" width="215" height="145">
 						<span class="goods__name">Перфоратор BOSCH BFG 3000</span>
 						<span class="goods__price-old">22500 р.</span>
 						<span class="goods__price">15500 р.</span>
 					</div>
-					<div class="goods__item">
+					<article class="goods__item">
 						<img src="http://lorempixel.com/215/145/" width="215" height="145">
 						<span class="goods__name">Перфоратор BOSCH BFG 6000</span>
 						<span class="goods__price-old">30500 р.</span>
-						<span class="price">25500 р.</span>
+						<span class="goods__price">25500 р.</span>
 					</div>
-					<div class="goods__item">
+					<article class="goods__item">
 						<img src="http://lorempixel.com/215/145/" width="215" height="145">
 						<span class="goods__name">Перфоратор BOSCH BFG 2000</span>
-						<span class="price">12500 р.</span>
+						<span class="goods__price">12500 р.</span>
 					</div>
 				</div>
 			</section>
 			<section class="manufacturer">	
 				<div class="popular">
 					<h2 class="popular__title">популярные производители:</h2>
-					<a class="popular__link" href="#"><span class="link__text">все производители</span></a>
+					<a class="popular__link" href="#">все популярные товары</a>
 				</div>
 				<div class="brands">
-				<!-- Аналогично. Можно ли каждый блок ниже поместить вместо дивов в article? -->
-					<div class="brands__block">
+					<article class="brands__block">
 						<img src="http://lorempixel.com/160/50/">
 					</div>
-					<div class="brands__block">
+					<article class="brands__block">
 						<img src="http://lorempixel.com/160/50/">
 					</div>
-					<div class="brands__block">
+					<article class="brands__block">
 						<img src="http://lorempixel.com/160/50/">
 					</div>
-					<div class="brands__block">
+					<article class="brands__block">
 						<img src="http://lorempixel.com/160/50/">
 					</div>
-					<div class="brands__block">
+					<article class="brands__block">
 						<img src="http://lorempixel.com/160/50/">
 					</div>
-					<div class="brands__block">
+					<article class="brands__block">
 						<img src="http://lorempixel.com/160/50/">
 					</div>
-					<div class="brands__block">
+					<article class="brands__block">
 						<img src="http://lorempixel.com/160/50/">
 					</div>
-					<div class="brands__block">
+					<article class="brands__block">
 						<img src="http://lorempixel.com/160/50/">
 					</div>
 				</div>
@@ -189,7 +181,33 @@
 					<p class="text">Хороший интернет-магазин отличается от плохого не только ценами!</p> 
 					<p class="services__text text">Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 				</div>
+
+
+				<!-- .services__block>(input[type="radio"]3 + .services__tabs>((.services__labels>label.services__labels-item3)+(.services__content>.services__content-item*3))) -->
+
+				<!-- Правильно ли сверстал первый элемент с доставкой на основании твоей записи выше? Не очень понятно честно говоря тут что получилось и не до конца понял как правильно читать твою запись. -->
+
 				<div class="services__block">
+					<input type="radio" name="service" value="delivery">
+					<div class="services__tabs">
+						<div class="services__labels">
+							<label class="services__labels-delivery" for="check1">Доставка</label>
+							<div class="services__content">
+								<div class="services__content-item">
+									<h2 class="delivery_title">Доставка</h2>
+									<p class="text">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<input type="radio" name="service" value="guarantee">Гарантия 
+					<input type="radio" name="service" value="credit">Кредит
+					
+
+
+				<!-- <div class="services__block">
 					<ul class="services__list">
 						<li class="services__item">
 							<a class="services__link" href="#">Доставка</a>
@@ -208,7 +226,7 @@
 					<div class="delivery__image">
 						<img src="http://lorempixel.com/206/146/" width="206" height="146">
 					</div>
-				</div>
+				</div> -->
 			</section>
 			<section class="about">
 				<div class="company">
