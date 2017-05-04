@@ -28,7 +28,6 @@
 				      	</div>
 				    </div>
 				</div>
-
 		    <div class="header__bottom">
 		    	<div class="container">
 			      <div class="row">
@@ -39,13 +38,15 @@
 			          <div class="vcard__tel">+7 (812) 555-05-55</div>
 			          <div class="vcard__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
 			        </div>
-			        <div class="user">
-			          <a href="#">Равшан Джамшутович</a>
-			        </div>
-			        <div class="personal">
-			        	<a class="personal__order" href="#">Мои заказы</a>
-			        	<a class="personal__order" href="#">Личный кабинет</a>
-			        </div>
+			        <div class="user-block">
+				        <div class="user">
+				          <a href="#">Равшан Джамшутович</a>
+				        </div>
+				        <div class="personal">
+				        	<a class="personal__order" href="#">Мои заказы</a>
+				        	<a class="personal__order" href="#">Личный кабинет</a>
+				        </div>
+					</div>
 			      </div>
 			      <nav class="navigation">
 			        <ul class="menu">
@@ -88,154 +89,137 @@
 				 <div class="block-title">
 					<h2 class="title-section">перфораторы</h2>
 				</div>
-				<section class="filter">
-					<div class="filter__block filter-sort">
-						<span class="filter__text">фильтр:</span>
-					</div>
-					<form action="#" method="post" class="filter__form">
-						<div class="filter__block">
-							<h3 class="filter__title">цена:</h3>
-							<div class="filter__sorting">
+				<section class="main-content">
+					<section class="filter">
+						<div class="filter__block filter-sort">
+							<span class="filter__text">фильтр:</span>
+						</div>
+						<form action="#" method="post" class="filter__form">
+							<div class="filter__block">
+								<h3 class="filter__title">цена:</h3>
+								<div class="filter__sorting">
+								</div>
+								<div class="filter__price-left">
+									<span class="price__text">0</span>
+								</div>
+								<span class="dash">-</span>
+								<div class="filter__price-right">
+									<span class="price__text">30000</span>
+								</div>
 							</div>
-							<div class="filter__price-left">
-								<span class="price__text">0</span>
+							<div class="filter__block">
+								<h3 class="filter__title">производители:</h3>
+								
+								<label for="ch1">
+									<input type="checkbox" name="manufacturers" id="ch1" value="bosch" checked><span>bosh</span>
+								</label>
+								<label for="ch2">
+									<input type="checkbox" name="manufacturers" id="ch2" value="интерскол"><span>интерскол</span>
+								</label>
+								<label for="ch3">
+									<input type="checkbox" name="manufacturers" id="ch3" value="makita" checked><span>makita</span>
+								</label>
+								<label for="ch4">
+									<input type="checkbox" name="manufacturers" id="ch4" value="dewalt"><span>dewalt</span>
+								</label>
+								<label for="ch5">
+									<input type="checkbox" name="manufacturers" id="ch5" value="hitachi"><span>hitachi</span>
+								</label>
 							</div>
-							<span class="dash">-</span>
-							<div class="filter__price-right">
-								<span class="price__text">30000</span>
+							<div class="filter__block">
+								<h3 class="filter__title">питание:</h3>
+								
+								<label for="ch6">
+									<input type="radio" name="power" id="ch6" value="battary" checked><span>аккумуляторные</span>
+								</label>
+								<label for="ch7">
+									<input type="radio" name="power" id="ch7" value="network"><span>сетевые</span>
+								</label>
+							</div>
+							<button type="submit" class="btn-show">показать</button>
+						</form>
+					</section>
+					<section class="right-block">
+						<div class="sorting">
+							<span class="sorting__title">сортировка:</span>
+							<div class="sorting__type">
+								<a class="active" href="#">по цене</a>
+								<a href="#">по типу</a>
+								<a href="#">по функционалу</a>
+							</div>
+							<div class="sorting__dir">
+								<a href=""></a>
+								<a href=""></a>
 							</div>
 						</div>
-						<div class="filter__block">
-							<h3 class="filter__title">производители:</h3>
-							
-							<label for="ch1">
-								<input type="checkbox" name="manufacturers" id="ch1" value="bosch" checked><span>bosh</span>
-							</label>
-							<label for="ch2">
-								<input type="checkbox" name="manufacturers" id="ch2" value="интерскол"><span>интерскол</span>
-							</label>
-							<label for="ch3">
-								<input type="checkbox" name="manufacturers" id="ch3" value="makita" checked><span>makita</span>
-							</label>
-							<label for="ch4">
-								<input type="checkbox" name="manufacturers" id="ch4" value="dewalt"><span>dewalt</span>
-							</label>
-							<label for="ch5">
-								<input type="checkbox" name="manufacturers" id="ch5" value="hitachi"><span>hitachi</span>
-							</label>
-						</div>
-						<div class="filter__block">
-							<h3 class="filter__title">питание:</h3>
-							
-							<label for="ch6">
-								<input type="radio" name="power" id="ch6" value="battary" checked><span>аккумуляторные</span>
-							</label>
-							<label for="ch7">
-								<input type="radio" name="power" id="ch7" value="network"><span>сетевые</span>
-							</label>
-						</div>
-						<button type="submit" class="btn-show">показать</button>
-					</form>
-				</section>
-				<section class="right-block">
-					<div class="sorting">
-						<span class="sorting__title">сортировка:</span>
-						<div class="sorting__type">
-							<a class="active" href="#">по цене</a>
-							<a href="#">по типу</a>
-							<a href="#">по функционалу</a>
-						</div>
-						<div class="sorting__dir">
-							<a href=""></a>
-							<a href=""></a>
-						</div>
-					</div>
-					<div class="goods">
-						<article class="goods__item">
-							<a href="#">
+						<div class="goods">
+							<article class="goods__item">
+								<a href="#">
 								<img src="http://lorempixel.com/215/145/" alt="Перфоратор BOSCH BFG 3000" width="215" height="145">
 								<span class="goods__name">Перфоратор BOSCH BFG 3000</span>
-							</a>
-							<span class="goods__price-old">22500 р.</span>
-							<a href="#">
-								<span class="goods__price">15500 р.</span>
-							</a>
-						</article>
-						<article class="goods__item">
-							<a href="#">
+								</a>
+								<span class="goods__price-old">22500 р.</span>
+								<a class="goods__price" href="#">15500 р.</a>
+							</article>
+							<article class="goods__item">
+								<a href="#">
 								<img src="http://lorempixel.com/215/145/" alt="Перфоратор BOSCH BFG 3000" width="215" height="145">
 								<span class="goods__name">Перфоратор BOSCH BFG 3000</span>
-							</a>
-							<span class="goods__price-old">22500 р.</span>
-							<a href="#">
-								<span class="goods__price">15500 р.</span>
-							</a>
-						</article>
-						<article class="goods__item">
-							<a href="">
-								<img src="http://lorempixel.com/215/145/" alt="Перфоратор BOSCH BFG 6000" width="215" height="145">
+								</a>
+								<span class="goods__price-old">22500 р.</span>
+								<a class="goods__price" href="#">22500 р.</a>
+							</article>
+							<article class="goods__item">
+								<a href=""><img src="http://lorempixel.com/215/145/" alt="Перфоратор BOSCH BFG 6000" width="215" height="145">
 								<span class="goods__name">Перфоратор BOSCH BFG 6000</span>
-							</a>
-							<span class="goods__price-old">30500 р.</span>
-							<a href="#">
-								<span class="goods__price">25500 р.</span>
-							</a>
-						</article>
-						<article class="goods__item">
-							<a href="#"><img src="http://lorempixel.com/215/145/" alt="Перфоратор BOSCH BFG 2000" width="215" height="145">
+								</a>
+								<span class="goods__price-old">30500 р.</span>
+								<a class="goods__price" href="#">12500 р.</a>
+							</article>
+							<article class="goods__item">
+								<a href="#"><img src="http://lorempixel.com/215/145/" alt="Перфоратор BOSCH BFG 2000" width="215" height="145">
 								<span class="goods__name">Перфоратор BOSCH BFG 2000</span>
-							</a>	
-							<a href="#">
-								<span class="goods__price">12500 р.</span>
-							</a>	
-						</article>
-						<article class="goods__item">
-							<a href="#"><img src="http://lorempixel.com/215/145/" alt="Перфоратор BOSCH BFG 2000" width="215" height="145">
+								</a>	
+								<a class="goods__price" href="#">15500 р.</a>
+							</article>
+							<article class="goods__item">
+								<a href="#"><img src="http://lorempixel.com/215/145/" alt="Перфоратор BOSCH BFG 2000" width="215" height="145">
 								<span class="goods__name">Перфоратор BOSCH BFG 2000</span>
-							</a>	
-							<a href="#">
-								<span class="goods__price">12500 р.</span>
-							</a>	
-						</article>
-						<article class="goods__item">
-							<a href="#"><img src="http://lorempixel.com/215/145/" alt="Перфоратор BOSCH BFG 2000" width="215" height="145">
+								</a>	
+								<a class="goods__price" href="#">12500 р.</a>
+							</article>
+							<article class="goods__item">
+								<a href="#"><img src="http://lorempixel.com/215/145/" alt="Перфоратор BOSCH BFG 2000" width="215" height="145">
 								<span class="goods__name">Перфоратор BOSCH BFG 2000</span>
-							</a>	
-							<a href="#">
-								<span class="goods__price">12500 р.</span>
-							</a>	
-						</article>
-						<article class="goods__item">
-							<a href="#"><img src="http://lorempixel.com/215/145/" alt="Перфоратор BOSCH BFG 2000" width="215" height="145">
+								</a>	
+								<a class="goods__price" href="#">12500 р.</a>
+							</article>
+							<article class="goods__item">
+								<a href="#"><img src="http://lorempixel.com/215/145/" alt="Перфоратор BOSCH BFG 2000" width="215" height="145">
 								<span class="goods__name">Перфоратор BOSCH BFG 2000</span>
-							</a>	
-							<a href="#">
-								<span class="goods__price">12500 р.</span>
-							</a>	
-						</article>
-						<article class="goods__item">
-							<a href="#"><img src="http://lorempixel.com/215/145/" alt="Перфоратор BOSCH BFG 2000" width="215" height="145">
+								</a>	
+								<a class="goods__price" href="#">12500 р.</a>
+							</article>
+							<article class="goods__item">
+								<a href="#"><img src="http://lorempixel.com/215/145/" alt="Перфоратор BOSCH BFG 2000" width="215" height="145">
 								<span class="goods__name">Перфоратор BOSCH BFG 2000</span>
-							</a>	
-							<a href="#">
-								<span class="goods__price">12500 р.</span>
-							</a>	
-						</article>
-						<article class="goods__item">
-							<a href="#"><img src="http://lorempixel.com/215/145/" alt="Перфоратор BOSCH BFG 2000" width="215" height="145">
+								</a>	
+								<a class="goods__price" href="#">12500 р.</a>	
+							</article>
+							<article class="goods__item">
+								<a href="#"><img src="http://lorempixel.com/215/145/" alt="Перфоратор BOSCH BFG 2000" width="215" height="145">
 								<span class="goods__name">Перфоратор BOSCH BFG 2000</span>
-							</a>	
-							<a href="#">
-								<span class="goods__price">12500 р.</span>
-							</a>	
-						</article>
-					</div>
-					<div class="paginator">
-			            <a class="active" href="#1">1</a>
-			            <a href="#2">2</a>
-			          	<a href="#3">3</a>
-			          	<a class="button" href="#4">следущая</a>
-	        		</div>
+								</a>	
+								<a class="goods__price" href="#">12500 р.</a>	
+							</article>
+						</div>
+						<div class="paginator">
+				            <a class="active" href="#1">1</a>
+				            <a href="#2">2</a>
+				          	<a href="#3">3</a>
+				          	<a class="button" href="#4">следущая</a>
+		        		</div>
+					</section>
 				</section>
 			</div>
 			<section class="about-product">
