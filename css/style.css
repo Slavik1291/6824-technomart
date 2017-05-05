@@ -16,17 +16,73 @@ h1,h2, h3 {
 	font-weight:700;
 	font-style:normal;
 }
-
-.header .logo {
-	font-size: 24px;
+.container {
+	width: 940px;
+	margin: 0 auto;
 }
-.footer .logo {
-	font-size: 30px;
+
+.header {
+
 }
 
 .header__top {
+	height: 42px;
+	background: #33445a;
 	font-family: "Cuprum", Arial,sans-serif;
 	font-size: 17px;
+}
+.header .logo {
+	float: left;
+	width: 220px;
+	height: 51px;
+	font-size: 24px;
+	background: #ff5357;
+}
+
+.header__search {
+	float: left;
+	width: 250px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.header__bookmarks, .header__basket, .header__ordering {
+	float: right;
+	width: 150px;
+}
+.header__basket {
+	
+}
+.header__ordering {
+	
+}
+
+.header__bottom {
+	background: url ("img/background.png") #f3f7f9;
+}
+.slogan, .vcard, .account {
+	width: 300px;
+}
+.slogan {
+	float: left;
+	background: red;
+}
+
+.slogan h2 {
+	font-size: 16px;
+	font-style: italic;
+	color: #ff5357;
+}
+
+.vcard {
+	float: left;
+	background: yellow;
+}
+
+.account{
+	float: right;
+	background: green;
 }
 
 .vcard__tel, .account {
@@ -47,4 +103,8 @@ h3 .promo__title {
 
 .services__labels-item {
 	font-size: 36px;
+}
+
+.footer .logo {
+	font-size: 30px;
 }
