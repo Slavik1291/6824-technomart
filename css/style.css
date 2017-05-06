@@ -16,22 +16,36 @@ h1,h2, h3 {
 	font-weight:700;
 	font-style:normal;
 }
+a {
+	text-decoration: none;
+}
 .container {
 	width: 940px;
 	margin: 0 auto;
 }
-
+.container:after{
+	content: '';
+    clear: both;
+    display: table;
+}
+.clearfix:after {
+	content: '';
+    clear: both;
+    display: table;
+}
 .header {
 
 }
 
 .header__top {
+	position: relative;
 	height: 42px;
 	background: #33445a;
 	font-family: "Cuprum", Arial,sans-serif;
 	font-size: 17px;
 }
 .header .logo {
+	position: absolute;
 	float: left;
 	width: 220px;
 	height: 51px;
@@ -66,6 +80,7 @@ h1,h2, h3 {
 }
 .slogan {
 	float: left;
+	width: 300px;
 	background: red;
 }
 
@@ -77,11 +92,13 @@ h1,h2, h3 {
 
 .vcard {
 	float: left;
+	width: 300px;
 	background: yellow;
 }
 
 .account{
 	float: right;
+	width: 300px;
 	background: green;
 }
 
@@ -91,6 +108,21 @@ h1,h2, h3 {
 
 .vcard__address {
 	font-size: 14px;
+}
+
+.navigation {
+	float: left;
+	min-height: 60px;
+	width: 100%;
+	background: #3d546e;
+}
+
+.navigation li{
+	display: inline-block;
+}
+
+.navigation li a {
+	color: #fff;
 }
 
 h2 .title-section {
