@@ -6,7 +6,6 @@ body {
 	font-family: 'PT Sans', Arial, sans-serif;
 	font-style: 13px;
 	font-weight: 400;
-	font-style:normal;
 	color: black;
 	background: white;
 }
@@ -28,6 +27,8 @@ a {
 .container {
 	width: 940px;
 	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 // .container:after{
 // 	content: '';
@@ -73,7 +74,7 @@ a.logo {
 .header .logo:after {
 	position: absolute;
     content: '';
-    left: 0;
+    left: 10px;
     top: 41px;
     width: 220px;
     height: 4px;
@@ -141,14 +142,6 @@ label.search-label {
 .header__bookmarks a,  .header__basket a, .header__ordering a{
 	color: #fff;
 }
-
-// .row {
-// 	min-height: 160px;
-// }
-
-// .slogan, .vcard, .account {
-// 	width: 300px;
-// }
 
 .slogan {
 	float: left;
@@ -229,9 +222,105 @@ h3 .promo__title {
  font-size: 24px;
 }
 
+.promo__item {
+	display: inline-block;
+	position: relative;
+	width: 300px;
+	height: 125px;
+}
+
+.promo__item:nth-child(1), .promo__item:nth-child(2){
+	margin-right: 15px;
+}
+
+.promo__title{
+	font-size: 24px;
+	margin: 25px 0 23px 24px;
+	color: #fff;
+}
+
+.promo__img {
+	position: relative;
+}
+
+.promo__img img {
+	position: absolute;
+	top: -42px;
+	right: 42px;
+
+}
+
+a.promo__link {
+	display: inline-block;
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-align: center;
+	width: 134px;
+	line-height: 41px;
+	margin: -10px 0 0 28px;
+	color: #fff;
+	background: rgba(0,0,0,.1);
+}
+
+.materials {
+	background: #ffbf47;
+}
+
+.materials:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60px;
+	height: 59px;
+	background: url("../img/new.png")
+}
+
+.tool {
+	background: #3dbce2;
+}
+
+.tech {
+	background: #dc91d8;
+}
+
+.discount {
+	background: #8ed78f;
+}
+
+.slider {
+	width: 620px;
+}
+
 .services__labels-item {
 	font-size: 36px;
 }
+
+.services__labels {
+	width: 250px;
+	float: left;
+}
+.services__content {
+	overflow: hidden;
+	padding-left: 80px;
+}
+
+.services__content-item {
+	position: relative;
+	min-height: 285px;
+}
+
+.services__text {
+	width: 380px;
+}
+
+.service__img {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
 
 .footer .logo {
 	font-size: 30px;
